@@ -1,3 +1,7 @@
+import os
+# Run logo fetcher if assets folder is empty
+if not os.path.exists("assets") or not os.listdir("assets"):
+    import fetch_logos
 # app.py
 import streamlit as st
 import pandas as pd
